@@ -1,16 +1,34 @@
 package archmagejay.tbd;
 
-import archmagejay.tbd.lib.reference;
+import net.minecraft.item.Item;
+import archmagejay.tbd.items.TbdItem1;
+import archmagejay.tbd.lib.Reference;
+import archmagejay.tbd.proxy.CommonProxy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkMod;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 
-@Mod(modid = reference.MOD_ID, name = reference.MOD_NAME, version = reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@NetworkMod (clientSideRequired = true)
+
+
 
 public class TBD {
     
+    public static final Item tbdItem1 = new TbdItem1(5000).setUnlocalizedName("tbdItem1");
+    public static final Item tbdIngot1 = new TbdItem1(5001).setMaxStackSize(16).setUnlocalizedName("tbdIngot1");
+    
+    @Instance (Reference.MOD_ID)
+    public static TBD instance;
+    
+    @SidedProxy (clientSide = "archmagejay.tbd.proxy.ClientProxy", serverSide = "archmagejay.tbd.proxy.CommonProxy")
+    public static CommonProxy proxy;
     /***
      * This is code that is executed prior to your mod being initialized into of Minecraft
      * Examples of code that could be run here;
@@ -24,9 +42,13 @@ public class TBD {
      */
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        
+        LanguageRegistry.addName(tbdItem1, "The first Item");
+        LanguageRegistry.addName(tbdIngot1, "Testing ingot");
     }
     
+    public void regName(Object id, String name){
+        LanguageRegistry.addName(id, name);
+    }
     /***
      * This is code that is executed when your mod is being initialized in Minecraft
      * Examples of code that could be run here;
@@ -40,7 +62,7 @@ public class TBD {
      */
     @EventHandler
     public void init(FMLInitializationEvent event) {
-        
+        proxy.registerRenderers();
     }
     
     /***
