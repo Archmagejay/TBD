@@ -2,7 +2,6 @@ package tbd.core.blocks;
 
 import java.util.List;
 
-import tbd.TBDCore;
 import tbd.core.creativetab.TBDCreativeTab;
 import tbd.core.lib.Reference;
 import cpw.mods.fml.relauncher.Side;

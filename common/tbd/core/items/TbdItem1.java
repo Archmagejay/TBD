@@ -1,6 +1,5 @@
 package tbd.core.items;
 
-import tbd.TBDCore;
 import tbd.core.creativetab.TBDCreativeTab;
 import net.minecraft.item.Item;
 
