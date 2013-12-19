@@ -17,6 +17,7 @@ The planned submodules are:
 - Fauna
 
 The current module that is being worked on is:
+- Core
 - Geology
 
 To use please have the latest recommended build of Minecraft Forge installed.
