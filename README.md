@@ -2,6 +2,10 @@ To Be Decided
 ===
 A Wip mod by Archmagejay.
 
+Requirements:
+- Minecraft Forge (Latest recommended build)
+- TBD Core
+
 The planned submodules are:
 - Astronomy
 - Geology
@@ -11,5 +15,8 @@ The planned submodules are:
 - Dimensional
 - Flora
 - Fauna
+
+The current module that is being worked on is:
+- Geology
 
 To use please have the latest recommended build of Minecraft Forge installed.
