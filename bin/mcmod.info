@@ -1,0 +1,34 @@
+[
+{
+	"modid": "Tbd|Core",
+	"name": "To Be Decided: Core",
+	"description": "A WIP mod by Archmagejay.\nThis is the core mod and as such does not include much.",
+	"version": "0.0.1",
+	"url": "https://github.com/Archmagejay/TBD.git",
+	"authors": [
+		"Archmagejay"
+	],
+	"credits": "Made by Archmagejay",
+	"logofile": "",
+	"screenshots": [
+	],
+	"parent": "",
+	"dependencies": [
+		"mod_MinecraftForge"
+	]
+},
+{
+	"modid": "Tbd|Geology",
+	"name": "To Be Decided: Geology",
+	"description": "A WIP mod by Archmagejay.\nThis is the Geology module and includes:\n- Geodes\n- Crystals\n- Minerals\n- And much, much more",
+	"version": "0.0.1",
+	"url": "https://github.com/Archmagejay/TBD.git",
+	"authors": [
+		"Archmagejay"
+	],
+	"credits": "Made by Archmagejay",
+	"dependencies": [
+		"mod_MinecraftForge"
+	]
+}
+]
