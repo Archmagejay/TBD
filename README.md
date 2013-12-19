@@ -2,6 +2,14 @@ To Be Decided
 ===
 A Wip mod by Archmagejay.
 
-It will probably involve magic at some point.
+The planned submodules are:
+- Astronomy
+- Geology
+- Tech
+- Thaumic
+- Exploration
+- Dimensional
+- Flora
+- Fauna
 
 To use please have the latest recommended build of Minecraft Forge installed.
